@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tambah Produk — URBANSOLE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container" style="display: flex; align-items: center; justify-content: space-between;">        
+        <a class="brand" href="index.html">URBANSOLE</a>
+
+        <nav style="display: flex; align-items: center; gap: 1rem">
+          <ul class="nav">
+            <li><a href="produk.html">Koleksi</a></li>
+          </ul>
+
+          <button class="theme-toggle" onclick="toggleTheme()" id="themeToggleBtn">
+            <svg id="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          
+            <svg id="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>          
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h2 style="margin-top: 1rem">Tambah Produk</h2>
+
+      <form id="form-tambah" class="form" style="margin-top: 1rem">
+        <div style="display: grid; gap: 0.8rem">
+          <div>
+            <label>Nama Produk</label>
+            <input name="nama_produk" class="input" placeholder="Contoh: Nike Air Max 270" required />
+          </div>
+
+          <div style="display: flex; gap: 0.6rem">
+            <div style="flex: 1">
+              <label>Harga (Rp)</label>
+              <input name="harga" type="number" class="input" placeholder="2300000" required />
+            </div>
+
+            <div style="width: 180px">
+              <label>Kategori</label>
+              <select name="kategori" class="select">
+                <option value="Sneakers">Sneakers</option>
+                <option value="Apparel">Apparel</option>
+              </select>
+            </div>
+
+            <div style="width: 120px">
+              <label>Stok</label>
+              <input name="stok" type="number" class="input" value="1" min="0" />
+            </div>
+          </div>
+
+          <div>
+            <label>Deskripsi</label>
+            <textarea name="deskripsi" rows="4" class="input" placeholder="Deskripsi singkat mengenai bahan, detail, atau karakter produk."></textarea>
+          </div>
+
+          <div>
+            <label>Upload Gambar (opsional)</label>
+            <input name="gambar" type="file" accept="image/*" class="input" />
+            <div style="font-size: 0.85rem; color: var(--muted); margin-top: 0.3rem;">
+              Jika tidak diupload, gambar placeholder akan digunakan.
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 0.6rem; justify-content: flex-end; margin-top: 0.4rem;">
+            <a class="btn btn-ghost" href="produk.html">Batal</a>
+            <button class="btn btn-primary" type="submit">Simpan</button>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
