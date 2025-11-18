@@ -98,7 +98,7 @@ const Storage = (function () {
       },
       {
         id: "p6",
-        name: "Oversized Hoodie — Black",
+        name: "Oversized Hoodie",
         category: "Apparel",
         price: 450000,
         stock: 20,
@@ -107,7 +107,7 @@ const Storage = (function () {
       },
       {
         id: "p7",
-        name: "Graphic Tee — Minimal",
+        name: "Graphic Tee",
         category: "Apparel",
         price: 150000,
         stock: 50,
@@ -116,7 +116,7 @@ const Storage = (function () {
       },
       {
         id: "p8",
-        name: "Cargo Pants — Utility",
+        name: "Cargo Pants",
         category: "Apparel",
         price: 320000,
         stock: 10,
