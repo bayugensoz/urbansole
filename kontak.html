@@ -4,66 +4,64 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Kontak — URBANSOLE</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
-      <div class="container" style="display: flex; align-items: center; justify-content: space-between;">        
-        <a class="brand" href="index.html">URBANSOLE</a>
-
-        <button class="theme-toggle" onclick="toggleTheme()" id="themeToggleBtn">
-            <svg id="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="5"></circle>
-              <line x1="12" y1="1" x2="12" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="23"></line>
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-              <line x1="1" y1="12" x2="3" y2="12"></line>
-              <line x1="21" y1="12" x2="23" y2="12"></line>
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-          
-            <svg id="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-          </button>          
+      <div class="container">        
+        <a class="brand" href="index.html">URBANSOLE.</a>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+        </nav>
+        <button onclick="toggleTheme()" class="btn" style="padding:5px 10px; margin-left:1rem;">🌗</button>
       </div>
     </header>
 
-    <main class="container" style="max-width: 720px">
-      <h2 style="margin-top: 1rem">Kontak</h2>
+    <main class="container" style="max-width: 700px; margin-top:3rem;">
+      
+      <div style="background:var(--red); padding:2rem; border:3px solid black; box-shadow:6px 6px 0px black; margin-bottom:2rem;">
+        <h2 style="margin:0; color:white; text-transform:uppercase; font-family:'Archivo Black'; font-size: 2rem;">WHATS UP?</h2>
+        <p style="color:white; font-weight:bold; margin-top:0.5rem; font-family:'Space Mono';">Jangan sungkan, kita nggak gigit kok.</p>
+      </div>
 
-      <p style="color: var(--muted)">
-        Hubungi kami untuk pertanyaan terkait produk, kertersediaan, atau informasi pengiriman.
-      </p>
-
-      <form id="form-kontak" class="form" style="margin-top: 1rem">
-        <div style="display: grid; gap: 0.8rem">
-          <div>
-            <label>Nama</label>
-            <input name="name" class="input" required />
+      <form id="form-kontak" class="form-box" style="max-width: 100%; margin: 0;">
+        <div style="display: grid; gap: 1.5rem">
+          
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div>
+              <label>Nama Lo</label>
+              <input name="name" class="input" required />
+            </div>
+            <div>
+              <label>Topik Pembicaraan</label>
+              <select name="topic" class="input"> <option value="Tanya Produk">Tanya Stok Produk</option>
+                <option value="Komplain">Komplain Barang</option>
+                <option value="Collab">Ajak Collab / Bisnis</option>
+                <option value="Iseng">Cuma Mau Sapa Admin</option>
+              </select>
+            </div>
           </div>
 
           <div>
-            <label>Email</label>
+            <label>Email Balasan</label>
             <input name="email" type="email" class="input" required />
           </div>
 
           <div>
-            <label>Pesan</label>
-            <textarea name="message" rows="5" class="input" required></textarea>
+            <label>Isi Pesan</label>
+            <textarea name="message" rows="5" class="input" placeholder="Tulis unek-unek lo di sini..." required></textarea>
           </div>
-
-          <div style="display: flex; gap: 0.6rem; justify-content: flex-end">
-            <a class="btn-cancel" href="index.html">Batal</a>
-            <button class="btn btn-primary" type="submit">Kirim</button>
-          </div>
+          
+          <button class="btn btn-primary" type="submit" style="width: 100%;">KIRIM PESAN 🚀</button>
         </div>
       </form>
     </main>
 
+    <footer class="footer">
+        <div class="container">
+            © 2025 URBANSOLE.
+        </div>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>

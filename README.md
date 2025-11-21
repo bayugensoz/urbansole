@@ -1,72 +1,70 @@
-# URBANSOLE — Modern Urban Streetwear 👟
+# URBANSOLE — Hardcore Neo-Brutalism Streetwear ⚡
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Design](https://img.shields.io/badge/Design-Neo--Brutalism-000000?style=for-the-badge)
 
-Project ini dibuat untuk memenuhi tugas **Pemrograman Web**. URBANSOLE adalah simulasi website *E-Commerce/Marketplace* yang berfokus pada penjualan *sneakers* dan *apparel* bergaya urban. 
+> **"Drop The Basic Look."**
 
-Website ini didesain agar **responsif**, **interaktif**, dan memiliki **navigasi yang lengkap**.
-
----
-
-## 🌐 Demo Live (GitHub Pages)
-
-Website dapat diakses secara online tanpa perlu instalasi melalui link berikut:
-
-👉 **[Buka Website URBANSOLE](https://bayugensoz.github.io/urbansole/)** 👈
+**URBANSOLE** adalah project website *E-Commerce* dengan pendekatan desain **Neo-Brutalism**. Berbeda dengan template Bootstrap standar, website ini menonjolkan garis tebal, tipografi monospaced, kontras tinggi, dan layout asimetris (*Bento Grid*) yang mencerminkan kultur *streetwear*.
 
 ---
 
-## ✅ Pemenuhan Syarat Tugas
+## 🌐 Live Demo
 
-Project ini telah memenuhi kriteria yang ditentukan:
+Cek hasil jadinya di sini (Pastikan pakai kacamata hitam 😎):
 
-1.  **Minimal 5 File HTML:**
-    * `index.html` (Halaman Utama/Dashboard)
-    * `produk.html` (Galeri Produk)
-    * `register.html` (Form Pendaftaran Member)
-    * `tambah-produk.html` (Form Input Data Produk)
-    * `kontak.html` (Halaman Kontak & Informasi)
-2.  **Tema E-Commerce:** Menampilkan produk sepatu dan apparel dengan konsep streetwear.
-3.  **Teknologi:** Menggunakan **HTML**, **CSS**, **JavaScript**, dan Framework **Bootstrap 5**.
-4.  **Formulir:** Terdapat lebih dari 2 formulir (Register, Tambah Produk, Kontak).
-5.  **Konten:** Menggunakan gambar dan deskripsi produk yang relevan (No Lorem Ipsum).
-6.  **Deploy:** Hosting menggunakan **GitHub Pages**.
+👉 **[https://bayugensoz.github.io/urbansole/](https://bayugensoz.github.io/urbansole/)**
 
 ---
 
-## ✨ Fitur Unggulan
+## 🔥 Fitur Unggulan (Key Features)
 
-* **Dark Mode Toggle:** Fitur ganti tema (Terang/Gelap) yang interaktif menggunakan JavaScript.
-* **Responsive Layout:** Tampilan menyesuaikan layar (Desktop, Tablet, Mobile) berkat Bootstrap Grid.
-* **Dynamic Grid:** Layout produk yang rapi.
-* **Form Validation:** Tampilan formulir yang user-friendly.
+Project ini bukan cuma soal tampilan, tapi juga fungsionalitas JavaScript yang dimaksimalkan:
+
+### 🎨 1. Neo-Brutalism UI/UX
+* **High Contrast:** Warna pop (Kuning, Biru, Merah) dengan border hitam tebal (3px).
+* **Micro-Interactions:** Efek *hover* bayangan kasar (*hard shadow*) pada tombol dan kartu.
+* **Anti-Template Layout:** Menggunakan **Bento Grid** asimetris pada Hero Section, bukan slider standar.
+* **Marquee Animation:** Teks berjalan otomatis untuk kesan *hype*.
+
+### ⚙️ 2. JavaScript Logic (Client-Side)
+* **Dynamic Rendering:** Produk di-render menggunakan JavaScript Array (bukan HTML statis).
+* **Local Storage Database:** Data produk tersimpan di browser.
+* **Image Upload Support:** User bisa mengupload gambar produk sendiri (dikonversi ke Base64) dan langsung tampil di halaman koleksi.
+* **CRUD Sederhana:** Menambah produk baru secara *real-time*.
+
+### 🌓 3. Smart Theming
+* **High-Contrast Dark Mode:** Mode gelap yang membalikkan warna border menjadi putih untuk efek *blueprint/neon*.
 
 ---
 
-## 📂 Struktur Folder
+## 📂 Struktur Folder (Clean Architecture)
+
+Kode dipisahkan berdasarkan fungsinya agar mudah dikembangkan:
 
 ```text
 urbansole/
-├── index.html          # Halaman Beranda
-├── produk.html         # Halaman Katalog
-├── register.html       # Halaman Pendaftaran
-├── tambah-produk.html  # Halaman Input Produk
-├── kontak.html         # Halaman Hubungi Kami
+├── index.html          # Halaman Utama (Bento Layout)
+├── produk.html         # Katalog Full & Filter
+├── detail-produk.html  # Halaman Detail Barang
+├── tambah-produk.html  # Form Jual Barang (Upload Img)
+├── register.html       # Form Pendaftaran
+├── kontak.html         # Form Kontak
 ├── css/
-│   └── style.css       # CSS Custom
+│   └── style.css       # CSS Neo-Brutalism (Variable Based)
 ├── js/
-│   └── script.js       # Logika JavaScript (Dark mode, dll)
-└── img/                # Aset Gambar
+│   └── script.js       # Logic Data, Upload, & DOM Manipulation
+└── img/                # Aset Gambar Lokal
 ```
 
 ---
 
-### 👨‍💻 Dibuat Oleh
+### 👨‍💻 Author
+Project ini dikerjakan dengan penuh ❤️ dan ☕ oleh:
 * **Nama:** Bayu Ramadhan
 * **NIM:** 242011069
 * **Kelas:** MC
 
-Project ini dibuat untuk tujuan pendidikan.
+Dibuat untuk memenuhi Tugas Pemrograman Web.
