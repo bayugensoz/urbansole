@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tentang Kami — URBANSOLE</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="brand">URBANSOLE.</a>
+            <nav class="nav">
+                <a href="produk.html">Koleksi</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="tambah-produk.html">Jual</a>
+                <a href="kontak.html">Kontak</a>
+                <a href="about.html">Tentang</a>
+            </nav>
+            <div style="display:flex; gap:1rem; align-items:center;">
+                <div class="cart-btn-container">
+                    <button onclick="toggleCart()" class="btn" style="padding:5px 10px;">🛒</button>
+                    <span class="cart-badge">0</span>
+                </div>
+                <button onclick="toggleTheme()" class="btn" style="padding:5px 10px;">🌗</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-3">
+        <section class="bento-grid">
+            <div class="bento-main">
+                <h1 class="hero-title">WE ARE <br> <span class="text-highlight">CHAOS.</span></h1>
+                <p class="hero-desc">
+                    UrbanSole lahir dari keresahan akan sneakers yang itu-itu aja. Kami hadir buat lo yang berani tampil
+                    beda, menabrak aturan, dan menciptakan tren sendiri.
+                </p>
+            </div>
+            <div class="bento-img">
+                <img src="img/nike-dunksb.jpg" alt="About Us" style="filter: grayscale(100%);">
+            </div>
+        </section>
+
+        <section style="margin-top: 4rem;">
+            <h2 class="section-title">THE CREW</h2>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <div class="card">
+                    <div class="card-body" style="text-align:center;">
+                        <div style="font-size:3rem; margin-bottom:1rem;">👨‍💻</div>
+                        <h3 class="card-title">DEV TEAM</h3>
+                        <p>The brains behind the code.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" style="text-align:center;">
+                        <div style="font-size:3rem; margin-bottom:1rem;">🎨</div>
+                        <h3 class="card-title">DESIGN TEAM</h3>
+                        <p>Making things look sick.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" style="text-align:center;">
+                        <div style="font-size:3rem; margin-bottom:1rem;">🚀</div>
+                        <h3 class="card-title">MARKETING</h3>
+                        <p>Hype beasts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 4rem; margin-bottom: 4rem;">
+            <h2 class="section-title">FAQ</h2>
+            <div style="border: 2px solid black; padding: 2rem;">
+                <details style="margin-bottom: 1rem; cursor: pointer;">
+                    <summary style="font-weight:bold; font-size:1.2rem;">Apakah barangnya ori?</summary>
+                    <p style="margin-top:0.5rem;">100% Original atau uang kembali 2x lipat. Kami anti barang KW.</p>
+                </details>
+                <hr style="border-top:1px solid #ddd; margin:1rem 0;">
+                <details style="margin-bottom: 1rem; cursor: pointer;">
+                    <summary style="font-weight:bold; font-size:1.2rem;">Bisa COD?</summary>
+                    <p style="margin-top:0.5rem;">Bisa banget! Pilih metode pembayaran COD pas checkout.</p>
+                </details>
+                <hr style="border-top:1px solid #ddd; margin:1rem 0;">
+                <details style="margin-bottom: 1rem; cursor: pointer;">
+                    <summary style="font-weight:bold; font-size:1.2rem;">Pengiriman berapa lama?</summary>
+                    <p style="margin-top:0.5rem;">Tergantung lokasi lo. Jabodetabek 1-2 hari, luar kota 3-5 hari.</p>
+                </details>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer-brand">URBANSOLE.</h2>
+            <p class="footer-tagline">Designed with Pure Chaos.</p>
+            <div class="footer-copy">© 2025 All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

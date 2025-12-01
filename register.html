@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Gabung Club — URBANSOLE</title>
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container" style="display: flex; align-items: center; justify-content: space-between;">        
-        <a class="brand" href="index.html">URBANSOLE.</a>
-        <a class="btn-outline" href="index.html" style="padding:5px 15px;">Batal</a>        
-      </div>
-    </header>
 
-    <main class="container" style="max-width: 600px; margin-top:3rem;">
-      <form id="form-register" class="form">
-        <h2 style="margin-top:0; text-align:center; font-weight:800; text-transform:uppercase; border-bottom:3px solid var(--text); padding-bottom:1rem; margin-bottom:2rem;">JOIN THE CIRCLE</h2>
-        
-        <div style="display: grid; gap: 1.2rem">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-            <div>
-              <label>Username</label>
-              <input name="username" class="input" required placeholder="Nama panggung lo"/>
-            </div>
-            <div>
-              <label>Instagram (Opsional)</label>
-              <input name="instagram" class="input" placeholder="@username"/>
-            </div>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gabung Club — URBANSOLE</title>
+  <link href="css/style.css" rel="stylesheet" />
+</head>
 
+<body>
+  <header class="header">
+    <div class="container header-flex">
+      <a class="brand" href="index.html">URBANSOLE.</a>
+      <a class="btn-outline" href="index.html" style="padding:5px 15px;">Batal</a>
+    </div>
+  </header>
+
+  <main class="container container-register">
+    <form id="form-register" class="form">
+      <h2 class="register-title">JOIN THE CIRCLE</h2>
+
+      <div class="form-stack">
+        <div class="form-grid-2">
           <div>
-            <label>Email Address</label>
-            <input name="email" type="email" class="input" required placeholder="email@address.com"/>
+            <label>Username</label>
+            <input name="username" class="input" required placeholder="Nama panggung lo" />
           </div>
-
           <div>
-              <label>Password</label>
-              <input name="password" type="password" class="input" required />
+            <label>Instagram (Opsional)</label>
+            <input name="instagram" class="input" placeholder="@username" />
           </div>
-
-          <div style="margin-top: 0.5rem;">
-            <label style="display:flex; align-items:center; gap:0.5rem; font-weight:500; text-transform:none;">
-              <input type="checkbox" required style="width:20px; height:20px; border:2px solid var(--text);">
-              Saya bukan robot.
-            </label>
-          </div>
-
-          <button class="btn-primary" type="submit" style="width:100%; margin-top:0.5rem;">GABUNG SEKARANG</button>
         </div>
-      </form>
-    </main>
-    <script src="js/script.js"></script>
-  </body>
+
+        <div>
+          <label>Email Address</label>
+          <input name="email" type="email" class="input" required placeholder="email@address.com" />
+        </div>
+
+        <div>
+          <label>Password</label>
+          <input name="password" type="password" class="input" required />
+        </div>
+
+        <div style="margin-top: 0.5rem;">
+          <label class="checkbox-label">
+            <input type="checkbox" required class="checkbox-input">
+            Saya bukan robot.
+          </label>
+        </div>
+
+        <button class="btn-primary w-100" type="submit" style="margin-top:0.5rem;">GABUNG SEKARANG</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer-brand">URBANSOLE.</h2>
+      <p class="footer-tagline">Designed with Pure Chaos.</p>
+      <div class="footer-copy">© 2025 All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>

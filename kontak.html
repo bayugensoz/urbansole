@@ -1,67 +1,85 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Kontak — URBANSOLE</title>
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">        
-        <a class="brand" href="index.html">URBANSOLE.</a>
-        <nav class="nav">
-            <a href="index.html">Home</a>
-        </nav>
-        <button onclick="toggleTheme()" class="btn" style="padding:5px 10px; margin-left:1rem;">🌗</button>
-      </div>
-    </header>
 
-    <main class="container" style="max-width: 700px; margin-top:3rem;">
-      
-      <div style="background:var(--red); padding:2rem; border:3px solid black; box-shadow:6px 6px 0px black; margin-bottom:2rem;">
-        <h2 style="margin:0; color:white; text-transform:uppercase; font-family:'Archivo Black'; font-size: 2rem;">WHATS UP?</h2>
-        <p style="color:white; font-weight:bold; margin-top:0.5rem; font-family:'Space Mono';">Jangan sungkan, kita nggak gigit kok.</p>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontak — URBANSOLE</title>
+  <link href="css/style.css" rel="stylesheet" />
+</head>
 
-      <form id="form-kontak" class="form-box" style="max-width: 100%; margin: 0;">
-        <div style="display: grid; gap: 1.5rem">
-          
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-            <div>
-              <label>Nama Lo</label>
-              <input name="name" class="input" required />
-            </div>
-            <div>
-              <label>Topik Pembicaraan</label>
-              <select name="topic" class="input"> <option value="Tanya Produk">Tanya Stok Produk</option>
-                <option value="Komplain">Komplain Barang</option>
-                <option value="Collab">Ajak Collab / Bisnis</option>
-                <option value="Iseng">Cuma Mau Sapa Admin</option>
-              </select>
-            </div>
-          </div>
-
-          <div>
-            <label>Email Balasan</label>
-            <input name="email" type="email" class="input" required />
-          </div>
-
-          <div>
-            <label>Isi Pesan</label>
-            <textarea name="message" rows="5" class="input" placeholder="Tulis unek-unek lo di sini..." required></textarea>
-          </div>
-          
-          <button class="btn btn-primary" type="submit" style="width: 100%;">KIRIM PESAN 🚀</button>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="brand">URBANSOLE.</a>
+      <nav class="nav">
+        <a href="produk.html">Koleksi</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="tambah-produk.html">Jual</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="about.html">Tentang</a>
+      </nav>
+      <div style="display:flex; gap:1rem; align-items:center;">
+        <div class="cart-btn-container">
+          <button onclick="toggleCart()" class="btn" style="padding:5px 10px;">🛒</button>
+          <span class="cart-badge">0</span>
         </div>
-      </form>
-    </main>
+        <button onclick="toggleTheme()" class="btn" style="padding:5px 10px;">🌗</button>
+      </div>
+    </div>
+  </header>
 
-    <footer class="footer">
-        <div class="container">
-            © 2025 URBANSOLE.
+  <main class="container container-narrow">
+
+    <div class="contact-hero">
+      <h2 class="hero-title-white">WHATS UP?</h2>
+      <p class="hero-desc-white">Jangan sungkan, kita nggak gigit kok.</p>
+    </div>
+
+    <form id="form-kontak" class="form-box form-full">
+      <div class="form-stack">
+
+        <div class="form-grid-2">
+          <div>
+            <label>Nama Lo</label>
+            <input name="name" class="input" required />
+          </div>
+          <div>
+            <label>Topik Pembicaraan</label>
+            <select name="topic" class="input">
+              <option value="Tanya Produk">Tanya Stok Produk</option>
+              <option value="Komplain">Komplain Barang</option>
+              <option value="Collab">Ajak Collab / Bisnis</option>
+              <option value="Iseng">Cuma Mau Sapa Admin</option>
+            </select>
+          </div>
         </div>
-    </footer>
-    <script src="js/script.js"></script>
-  </body>
+
+        <div>
+          <label>Email Balasan</label>
+          <input name="email" type="email" class="input" required />
+        </div>
+
+        <div>
+          <label>Isi Pesan</label>
+          <textarea name="message" rows="5" class="input" placeholder="Tulis unek-unek lo di sini..."
+            required></textarea>
+        </div>
+
+        <button class="btn btn-primary w-100" type="submit">KIRIM PESAN 🚀</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer-brand">URBANSOLE.</h2>
+      <p class="footer-tagline">Designed with Pure Chaos.</p>
+      <div class="footer-copy">© 2025 All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>

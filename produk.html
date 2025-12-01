@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URBANSOLE — Koleksi</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <header class="header">
         <div class="container">
             <a href="index.html" class="brand">URBANSOLE.</a>
             <nav class="nav">
-                <a href="index.html">Home</a>
+                <a href="produk.html">Koleksi</a>
+                <a href="wishlist.html">Wishlist</a>
                 <a href="tambah-produk.html">Jual</a>
+                <a href="kontak.html">Kontak</a>
+                <a href="about.html">Tentang</a>
             </nav>
-            <button onclick="toggleTheme()" class="btn" style="padding:5px 10px;">🌗</button>
+            <div style="display:flex; gap:1rem; align-items:center;">
+                <div class="cart-btn-container">
+                    <button onclick="toggleCart()" class="btn" style="padding:5px 10px;">🛒</button>
+                    <span class="cart-badge">0</span>
+                </div>
+                <button onclick="toggleTheme()" class="btn" style="padding:5px 10px;">🌗</button>
+            </div>
         </div>
     </header>
 
-    <div class="container" style="margin-top: 3rem;">
-        
-        <div style="background: var(--yellow); border: var(--border); padding: 2rem; margin-bottom: 3rem; box-shadow: var(--shadow);">
-            <h1 style="margin:0; font-family:'Archivo Black'; text-transform:uppercase;">Semua Koleksi</h1>
-            <p style="margin-top:0.5rem; font-weight:bold;">Cari barang incaran lo di sini.</p>
-            
-            <div style="display:flex; gap:1rem; margin-top:1.5rem; flex-wrap:wrap;">
-                <select id="filter-category" class="input" style="width:auto; margin:0;">
+    <div class="container">
+
+        <div class="page-header-box mt-3">
+            <h1 class="page-title">Semua Koleksi</h1>
+            <p class="page-desc">Cari barang incaran lo di sini.</p>
+
+            <div class="filter-bar">
+                <select id="filter-category" class="select input-auto">
                     <option value="">Semua Kategori</option>
                     <option value="Sneakers">Sneakers</option>
                     <option value="Apparel">Apparel</option>
                 </select>
-                <input type="text" id="search-input" class="input" placeholder="Cari barang..." style="width:auto; flex:1; margin:0;">
+                <input type="text" id="search-input" class="input input-search" placeholder="Cari barang...">
             </div>
         </div>
 
@@ -41,10 +52,13 @@
 
     <footer class="footer">
         <div class="container">
-            © 2025 URBANSOLE.
+            <h2 class="footer-brand">URBANSOLE.</h2>
+            <p class="footer-tagline">Designed with Pure Chaos.</p>
+            <div class="footer-copy">© 2025 All rights reserved.</div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

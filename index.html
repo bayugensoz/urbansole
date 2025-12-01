@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URBANSOLE — Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <div style="background:#000; color:#fff; border-bottom:3px solid #000; padding:8px 0; overflow:hidden;">
-        <div style="white-space:nowrap; font-family:'Space Mono'; font-weight:bold; animation:marquee 15s linear infinite;">
-            ⚡ NEW DROP: URBANSOLE X MALANG — DISKON 50% UNTUK MEMBER BARU — GRATIS ONGKIR — WEAR CHAOS —
+    <div class="marquee-container">
+        <div class="marquee-text">
+            ⚡ NEW DROP: URBANSOLE X MALANG — DISKON 50% UNTUK MEMBER BARU — GRATIS ONGKIR — WEAR CHAOS — ⚡ NEW DROP:
+            URBANSOLE X MALANG — DISKON 50% UNTUK MEMBER BARU — GRATIS ONGKIR — WEAR CHAOS —
         </div>
     </div>
-    <style>@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }</style>
 
     <header class="header">
         <div class="container">
             <a href="index.html" class="brand">URBANSOLE.</a>
             <nav class="nav">
                 <a href="produk.html">Koleksi</a>
+                <a href="wishlist.html">Wishlist</a>
                 <a href="tambah-produk.html">Jual</a>
                 <a href="kontak.html">Kontak</a>
+                <a href="about.html">Tentang</a>
             </nav>
-            <button onclick="toggleTheme()" class="btn" style="padding:5px 10px;">🌗</button>
+            <div style="display:flex; gap:1rem; align-items:center;">
+                <div class="cart-btn-container">
+                    <button onclick="toggleCart()" class="btn" style="padding:5px 10px;">🛒</button>
+                    <span class="cart-badge">0</span>
+                </div>
+                <button onclick="toggleTheme()" class="btn" style="padding:5px 10px;">🌗</button>
+            </div>
         </div>
     </header>
 
     <div class="container">
-        
-        <section class="bento-grid" style="margin-top: 2rem;">
+
+        <section class="bento-grid mt-2">
             <div class="bento-main">
-                <div style="font-weight:bold; margin-bottom:1rem; background:black; color:white; width:fit-content; padding:2px 8px;">/// EST. 2025</div>
-                <h1 style="font-family:'Archivo Black'; font-size:3.5rem; line-height:1; margin:0 0 1.5rem 0; text-transform:uppercase;">
-                    Drop The <br> <span style="color:var(--blue); text-decoration:underline;">Basic</span> Look.
+                <div class="tag-black">/// EST. 2025</div>
+                <h1 class="hero-title">
+                    Drop The <br> <span class="text-highlight">Basic</span> Look.
                 </h1>
-                <p style="font-size:1.1rem; margin-bottom:2rem; border-left:4px solid var(--yellow); padding-left:1rem;">
+                <p class="hero-desc">
                     Koleksi sneakers & apparel terkurasi buat lo yang berani tampil beda.
                 </p>
-                <div style="display:flex; gap:1rem;">
+                <div class="flex-gap">
                     <a href="produk.html" class="btn btn-primary">BELANJA SEKARANG</a>
                     <a href="register.html" class="btn btn-outline">GABUNG CLUB</a>
                 </div>
             </div>
-            
+
             <div class="bento-img">
                 <img src="img/nb-550.jpg" alt="Hero">
-                <div style="position:absolute; bottom:0; right:0; background:var(--yellow); border-top:3px solid #000; border-left:3px solid #000; padding:10px; font-weight:bold;">
+                <div class="featured-tag">
                     FEATURED: NB 550
                 </div>
             </div>
@@ -59,25 +69,26 @@
         </section>
 
         <section>
-            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:2rem; border-bottom:3px solid #000; padding-bottom:1rem;">
-                <h2 style="margin:0; font-family:'Archivo Black'; font-size:2rem;">FRESH DROPS</h2>
-                <a href="produk.html" style="font-weight:bold; border-bottom:2px solid #000;">LIHAT SEMUA ➔</a>
+            <div class="section-header">
+                <h2 class="section-title">FRESH DROPS</h2>
+                <a href="produk.html" class="link-bold">LIHAT SEMUA ➔</a>
             </div>
-            
+
             <div id="home-product-grid" class="grid"></div>
-        
+
         </section>
 
     </div>
 
     <footer class="footer">
         <div class="container">
-            <h2 style="font-family:'Archivo Black'; margin:0;">URBANSOLE.</h2>
-            <p style="opacity:0.7;">Designed with Pure Chaos.</p>
-            <div style="margin-top:1rem;">© 2025 All rights reserved.</div>
+            <h2 class="footer-brand">URBANSOLE.</h2>
+            <p class="footer-tagline">Designed with Pure Chaos.</p>
+            <div class="footer-copy">© 2025 All rights reserved.</div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

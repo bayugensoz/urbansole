@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout — URBANSOLE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .checkout-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .checkout-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .summary-box {
+            background: var(--surface);
+            border: var(--border);
+            box-shadow: 10px 10px 0px #000;
+            padding: 1.5rem;
+            position: sticky;
+            top: 2rem;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .summary-total {
+            border-top: 3px solid #000;
+            padding-top: 1rem;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="brand">URBANSOLE.</a>
+            <nav class="nav">
+                <a href="produk.html">Koleksi</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="tambah-produk.html">Jual</a>
+                <a href="kontak.html">Kontak</a>
+                <a href="about.html">Tentang</a>
+            </nav>
+            <div style="display:flex; gap:1rem; align-items:center;">
+                <div class="cart-btn-container">
+                    <button onclick="toggleCart()" class="btn" style="padding:5px 10px;">🛒</button>
+                    <span class="cart-badge">0</span>
+                </div>
+                <button onclick="toggleTheme()" class="btn" style="padding:5px 10px;">🌗</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-3">
+        <h1 class="page-title">CHECKOUT</h1>
+
+        <div class="checkout-grid">
+            <!-- Left: Form -->
+            <div>
+                <form id="form-checkout" class="form-box" style="width:100%;">
+                    <h3 style="margin-top:0;">ALAMAT PENGIRIMAN</h3>
+
+                    <div class="form-group">
+                        <label class="form-label">NAMA LENGKAP</label>
+                        <input type="text" name="nama" class="input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">NOMOR HP / WA</label>
+                        <input type="tel" name="phone" class="input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">ALAMAT LENGKAP</label>
+                        <textarea name="alamat" class="input" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-grid-2">
+                        <div>
+                            <label class="form-label">KOTA</label>
+                            <input type="text" name="kota" class="input" required>
+                        </div>
+                        <div>
+                            <label class="form-label">KODE POS</label>
+                            <input type="text" name="kodepos" class="input" required>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top:2rem;">METODE PEMBAYARAN</h3>
+                    <div class="form-group">
+                        <select name="payment" class="input">
+                            <option value="transfer">Transfer Bank (BCA/Mandiri)</option>
+                            <option value="ewallet">E-Wallet (GoPay/OVO/Dana)</option>
+                            <option value="cod">Cash on Delivery (COD)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100" style="margin-top:1rem;">BUAT PESANAN</button>
+                </form>
+            </div>
+
+            <!-- Right: Summary -->
+            <div>
+                <div class="summary-box">
+                    <h3 style="margin-top:0; border-bottom:3px solid #000; padding-bottom:1rem; margin-bottom:1rem;">
+                        RINGKASAN PESANAN</h3>
+
+                    <div id="checkout-items">
+                        <!-- Items injected here -->
+                    </div>
+
+                    <div class="summary-row" style="margin-top:2rem;">
+                        <span>Subtotal</span>
+                        <span id="checkout-subtotal">IDR 0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Ongkos Kirim</span>
+                        <span>GRATIS</span>
+                    </div>
+                    <div class="summary-row summary-total">
+                        <span>TOTAL</span>
+                        <span id="checkout-total">IDR 0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer-brand">URBANSOLE.</h2>
+            <p class="footer-tagline">Designed with Pure Chaos.</p>
+            <div class="footer-copy">© 2025 All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

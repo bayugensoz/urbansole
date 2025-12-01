@@ -5,66 +5,87 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Design](https://img.shields.io/badge/Design-Neo--Brutalism-000000?style=for-the-badge)
 
-> **"Drop The Basic Look."**
+> **"Drop The Basic Look. Wear Chaos."**
 
-**URBANSOLE** adalah project website *E-Commerce* dengan pendekatan desain **Neo-Brutalism**. Berbeda dengan template Bootstrap standar, website ini menonjolkan garis tebal, tipografi monospaced, kontras tinggi, dan layout asimetris (*Bento Grid*) yang mencerminkan kultur *streetwear*.
+**URBANSOLE** adalah platform *E-Commerce* modern yang mengusung estetika desain **Neo-Brutalism**. Proyek ini menantang standar desain konvensional dengan penggunaan tipografi monospaced yang berani, garis tepi tebal, warna kontras tinggi, dan tata letak asimetris (*Bento Grid*).
+
+Dibangun dengan **Vanilla JavaScript**, Urbansole membuktikan bahwa fungsionalitas kompleks seperti manajemen keranjang belanja, wishlist, autentikasi pengguna, dan dashboard admin dapat dicapai tanpa framework berat.
 
 ---
 
 ## 🌐 Live Demo
 
-Cek hasil jadinya di sini (Pastikan pakai kacamata hitam 😎):
+Rasakan pengalaman belanja yang berbeda di sini:
 
 👉 **[https://bayugensoz.github.io/urbansole/](https://bayugensoz.github.io/urbansole/)**
 
 ---
 
-## 🔥 Fitur Unggulan (Key Features)
-
-Project ini bukan cuma soal tampilan, tapi juga fungsionalitas JavaScript yang dimaksimalkan:
+## 🔥 Fitur Utama (Key Features)
 
 ### 🎨 1. Neo-Brutalism UI/UX
-* **High Contrast:** Warna pop (Kuning, Biru, Merah) dengan border hitam tebal (3px).
-* **Micro-Interactions:** Efek *hover* bayangan kasar (*hard shadow*) pada tombol dan kartu.
-* **Anti-Template Layout:** Menggunakan **Bento Grid** asimetris pada Hero Section, bukan slider standar.
-* **Marquee Animation:** Teks berjalan otomatis untuk kesan *hype*.
+*   **High Contrast Aesthetics:** Kombinasi warna kuning lalu lintas, biru elektrik, dan merah murni dengan border hitam 3px yang tegas.
+*   **Tactile Interactions:** Efek *hover* dengan bayangan kasar (*hard shadow*) memberikan umpan balik visual yang memuaskan.
+*   **Responsive Layout:** Desain adaptif yang tetap "rusuh" namun fungsional di berbagai ukuran layar.
 
-### ⚙️ 2. JavaScript Logic (Client-Side)
-* **Dynamic Rendering:** Produk di-render menggunakan JavaScript Array (bukan HTML statis).
-* **Local Storage Database:** Data produk tersimpan di browser.
-* **Image Upload Support:** User bisa mengupload gambar produk sendiri (dikonversi ke Base64) dan langsung tampil di halaman koleksi.
-* **CRUD Sederhana:** Menambah produk baru secara *real-time*.
+### 🛍️ 2. Advanced Shopping Experience
+*   **Shopping Cart System:** Tambah barang ke keranjang, update kuantitas, dan hitung total belanja secara *real-time*.
+*   **Wishlist:** Simpan item favorit Anda untuk dibeli nanti.
+*   **Checkout Simulation:** Formulir checkout lengkap dengan ringkasan pesanan dan validasi.
+*   **Dynamic Product Rendering:** Katalog produk di-generate secara dinamis dari data JavaScript.
 
-### 🌓 3. Smart Theming
-* **High-Contrast Dark Mode:** Mode gelap yang membalikkan warna border menjadi putih untuk efek *blueprint/neon*.
+### 🔐 3. User Management & Admin
+*   **User Authentication:** Sistem Login dan Register fungsional menggunakan `localStorage`.
+*   **Admin Dashboard:** Panel khusus admin untuk mengelola produk (Tambah/Hapus Produk).
+*   **Profile Management:** Tampilan status login yang personal dengan pemotongan nama pengguna otomatis.
+
+### ⚙️ 4. Technical Highlights
+*   **Local Storage Database:** Persistensi data untuk user, produk, keranjang, dan wishlist tanpa backend server.
+*   **Image Handling:** Dukungan upload gambar produk (konversi Base64) untuk penambahan produk baru.
+*   **Clean Code Architecture:** Pemisahan logika (JS), gaya (CSS), dan struktur (HTML) yang rapi.
 
 ---
 
-## 📂 Struktur Folder (Clean Architecture)
-
-Kode dipisahkan berdasarkan fungsinya agar mudah dikembangkan:
+## 📂 Struktur Proyek
 
 ```text
 urbansole/
-├── index.html          # Halaman Utama (Bento Layout)
-├── produk.html         # Katalog Full & Filter
-├── detail-produk.html  # Halaman Detail Barang
-├── tambah-produk.html  # Form Jual Barang (Upload Img)
-├── register.html       # Form Pendaftaran
-├── kontak.html         # Form Kontak
+├── index.html          # Halaman Utama (Bento Grid Layout)
+├── produk.html         # Katalog Produk Lengkap
+├── detail-produk.html  # Halaman Detail Produk
+├── wishlist.html       # Halaman Item Favorit
+├── checkout.html       # Halaman Pembayaran
+├── login.html          # Halaman Masuk
+├── register.html       # Halaman Pendaftaran
+├── admin.html          # Dashboard Admin (Kelola Produk)
+├── about.html          # Tentang Kami
+├── kontak.html         # Halaman Kontak
 ├── css/
-│   └── style.css       # CSS Neo-Brutalism (Variable Based)
+│   └── style.css       # Stylesheet Utama (CSS Variables & Neo-Brutalism)
 ├── js/
-│   └── script.js       # Logic Data, Upload, & DOM Manipulation
-└── img/                # Aset Gambar Lokal
+│   └── script.js       # Core Logic (Auth, Cart, Products, DOM)
+└── img/                # Aset Gambar
 ```
 
 ---
 
-### 👨‍💻 Author
-Project ini dikerjakan dengan penuh ❤️ dan ☕ oleh:
-* **Nama:** Bayu Ramadhan
-* **NIM:** 242011069
-* **Kelas:** MC
+## 🚀 Cara Menjalankan (Local Development)
 
-Dibuat untuk memenuhi Tugas Pemrograman Web.
+1.  Clone repository ini:
+    ```bash
+    git clone https://github.com/bayugensoz/urbansole.git
+    ```
+2.  Buka folder proyek di VS Code.
+3.  Jalankan menggunakan **Live Server** extension untuk pengalaman terbaik.
+
+---
+
+### 👨‍💻 Author
+
+Project ini dikerjakan dengan penuh dedikasi oleh:
+
+*   **Nama:** Bayu Ramadhan
+*   **NIM:** 242011069
+*   **Kelas:** MC
+
+*Dibuat untuk memenuhi Tugas Pemrograman Web 1.*

@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Jual Barang — URBANSOLE</title>
     <link href="css/style.css" rel="stylesheet" />
 </head>
+
 <body>
     <header class="header">
         <div class="container">
-            <a class="brand" href="index.html">URBANSOLE.</a>
-            <a href="index.html" class="btn-outline" style="padding:8px 15px;">BATAL</a>
+            <a href="index.html" class="brand">URBANSOLE.</a>
+            <nav class="nav">
+                <a href="produk.html">Koleksi</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="tambah-produk.html">Jual</a>
+                <a href="kontak.html">Kontak</a>
+                <a href="about.html">Tentang</a>
+            </nav>
+            <div style="display:flex; gap:1rem; align-items:center;">
+                <div class="cart-btn-container">
+                    <button onclick="toggleCart()" class="btn" style="padding:5px 10px;">🛒</button>
+                    <span class="cart-badge">0</span>
+                </div>
+                <button onclick="toggleTheme()" class="btn" style="padding:5px 10px;">🌗</button>
+            </div>
         </div>
     </header>
 
     <div class="container">
         <div class="form-box">
-            <h2 style="font-family:'Archivo Black'; margin-top:0; border-bottom:3px solid #000; padding-bottom:1rem; margin-bottom:1.5rem;">PASANG IKLAN</h2>
-            
+            <h2 class="form-title">PASANG IKLAN</h2>
+
             <form id="form-tambah">
-                <div style="margin-bottom: 1rem;">
-                    <label style="font-weight:bold; display:block; margin-bottom:0.5rem;">NAMA BARANG</label>
-                    <input type="text" name="nama_produk" class="input" placeholder="Contoh: Nike Air Jordan 1" required>
+                <div class="form-group">
+                    <label class="form-label">NAMA BARANG</label>
+                    <input type="text" name="nama_produk" class="input" placeholder="Contoh: Nike Air Jordan 1"
+                        required>
                 </div>
 
-                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem; margin-bottom: 1rem;">
+                <div class="form-grid-2">
                     <div>
-                        <label style="font-weight:bold; display:block; margin-bottom:0.5rem;">HARGA (IDR)</label>
+                        <label class="form-label">HARGA (IDR)</label>
                         <input type="number" name="harga" class="input" placeholder="2500000" required>
                     </div>
                     <div>
-                        <label style="font-weight:bold; display:block; margin-bottom:0.5rem;">KATEGORI</label>
+                        <label class="form-label">KATEGORI</label>
                         <select name="kategori" class="input">
                             <option value="Sneakers">Sneakers</option>
                             <option value="Apparel">Apparel</option>
@@ -38,21 +54,32 @@
                     </div>
                 </div>
 
-                <div style="margin-bottom: 1rem;">
-                    <label style="font-weight:bold; display:block; margin-bottom:0.5rem;">DESKRIPSI DETAIL</label>
-                    <textarea name="deskripsi" class="input" rows="4" placeholder="Jelaskan kondisi barang, ukuran, minus, dll..." required></textarea>
+                <div class="form-group">
+                    <label class="form-label">DESKRIPSI DETAIL</label>
+                    <textarea name="deskripsi" class="input" rows="4"
+                        placeholder="Jelaskan kondisi barang, ukuran, minus, dll..." required></textarea>
                 </div>
 
                 <div style="margin-bottom: 1.5rem;">
-                    <label style="font-weight:bold; display:block; margin-bottom:0.5rem;">FOTO PRODUK</label>
-                    <input type="file" name="gambar" class="input" accept="image/*" style="padding: 10px;">
-                    <small style="display:block; margin-top:5px; opacity:0.7;">*Format JPG/PNG. Jika kosong akan pakai gambar default.</small>
+                    <label class="form-label">FOTO PRODUK</label>
+                    <input type="file" name="gambar" class="input input-file" accept="image/*">
+                    <small class="form-hint">*Format JPG/PNG. Jika kosong akan pakai gambar default.</small>
                 </div>
 
-                <button class="btn btn-primary" style="width:100%;">TAYANGKAN IKLAN</button>
+                <button class="btn btn-primary w-100">TAYANGKAN IKLAN</button>
             </form>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer-brand">URBANSOLE.</h2>
+            <p class="footer-tagline">Designed with Pure Chaos.</p>
+            <div class="footer-copy">© 2025 All rights reserved.</div>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
+
 </html>
